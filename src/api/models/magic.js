@@ -113,7 +113,7 @@ export class MagicDice extends BaseDice {
             // only magic dice using this formula + 1
             target = Math.floor(req.body.Chance) + 1;
         }
-        let memo = condition + ' ' + target + ' mydicebot' + Math.random().toString(36).substring(2);
+        let memo = condition + ' ' + target + ' at-mydicebot';
         let bet = amount + ' '+ req.body.Currency.toUpperCase();
         let userName = req.session.username;
         let token = req.session.accessToken;
